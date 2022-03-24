@@ -1,18 +1,18 @@
 package de.gwsloerrach.denizabd;
 
-public class Board {
-    private Slot[][] board;
+public final class Board {
+    private SlotType[][] board;
 
     public Board() {
-        board = new Slot[][] {
-                { Slot.DISC, Slot.RED, Slot.RED, Slot.EMPTY },
-                { Slot.EMPTY, Slot.BLUE, Slot.RED, Slot.EMPTY },
-                { Slot.EMPTY, Slot.BLUE, Slot.RED, Slot.EMPTY },
-                { Slot.EMPTY, Slot.BLUE, Slot.BLUE, Slot.DISC }
+        board = new SlotType[][] {
+                { SlotType.DISC, SlotType.RED, SlotType.RED, SlotType.EMPTY },
+                { SlotType.EMPTY, SlotType.BLUE, SlotType.RED, SlotType.EMPTY },
+                { SlotType.EMPTY, SlotType.BLUE, SlotType.RED, SlotType.EMPTY },
+                { SlotType.EMPTY, SlotType.BLUE, SlotType.BLUE, SlotType.DISC }
         };
     }
 
-    public Slot[][] getBoard() {
+    public SlotType[][] getBoard() {
         return board;
     }
 }
