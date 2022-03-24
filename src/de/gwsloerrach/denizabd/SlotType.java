@@ -7,7 +7,7 @@ import java.awt.*;
  *
  * http://tutorials.jenkov.com/java/enums.html
  */
-public enum Slot {
+public enum SlotType {
     EMPTY(Color.WHITE),
     DISC(Color.BLACK),
     BLUE(Color.BLUE),
@@ -15,7 +15,7 @@ public enum Slot {
 
     private Color color;
 
-    private Slot(Color color) {
+    SlotType(Color color) {
         this.color = color;
     }
 
