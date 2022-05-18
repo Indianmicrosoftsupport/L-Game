@@ -10,11 +10,12 @@ public final class Main {
             Socket socket = new Socket("localhost", 3333);
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
+            // send message to server
             dataOutputStream.writeUTF("Ping");
 
+            // close connection
             dataOutputStream.flush();
             dataOutputStream.close();
-
             socket.close();
         } catch (IOException e) {
             e.printStackTrace();
