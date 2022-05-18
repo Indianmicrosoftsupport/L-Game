@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class GUI extends JFrame {
+public final class GUI extends JFrame {
     private final Board board;
 
     public GUI(Board board) {
